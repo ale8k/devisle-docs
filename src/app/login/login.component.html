@@ -1,1 +1,7 @@
-<p>login works!</p>
+<div class="login-container">
+    <form>
+        <label for="email" class="login-label">Please enter your email to enter the site</label>
+        <input (keyup)="logUsersInput($event)" id="email"class="login-input" type="email" name="Email">
+        <button (click)="attemptToRouteUser($event)" class="login-button" type="button">Enter</button>
+    </form>
+</div>
